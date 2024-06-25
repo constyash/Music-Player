@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="Music-Player.css">
+</head>
+<body>
+    <div id="Music-Player">
+        <div id="DVD">
+        <div id="Rotate"><h1>MUSIC</h1></div>
+        <span>
+        <p id="High">High</p><input type="range" id="Volume" min="0" max="1" value="1" step="0.1"><p id="Low" >Low</p>
+        </span>
+    </div>
+        <div id="Player">
+         <input type="file" accept="audio/*" id="Music">
+         <label for="Music" class="music">Select Music</label>
+         <audio ></audio>
+         <span id="duration">
+         <p id="Start">0:00</p><input type="range" id="Duration" min="0" value="0"><p id="End">0:00</p>
+         </span>
+         <button id="Play" type="submit">Play</button> 
+        </div>
+    </div>
+    <script src="Music-Player.js"></script>
+</body>
+</html>
